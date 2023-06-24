@@ -20,9 +20,9 @@ N3C-California is a specialized benchmark dataset for quantitative evaluation in
 
 ![N3C-California](./N3C-California.jpg)
 
-Google drive: 
+OneDrive: TODO
 
-Baiduyun: 
+Baiduyun: https://pan.baidu.com/s/1uofogwM_TAAKaIw0cqPb0A (access code: 5no1)
 
 How to use it?
 ---------------------
