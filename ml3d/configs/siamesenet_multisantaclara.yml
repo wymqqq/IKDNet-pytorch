@@ -1,0 +1,60 @@
+dataset:
+  name: MultiSantaclara
+  dataset_path: # path/to/your/dataset
+  img_dataset_path: /mnt/e/WYM/dataset/naip/image/
+  cache_dir:  # path/to/your/cache
+  class_weights: [31086629, 7394358538, 6553775583, 2635695465]
+  ignored_label_inds: [0]
+  test_result_folder: ./test
+  use_cache: true
+  steps_per_epoch_train: 2000
+  steps_per_epoch_valid: 1049
+model:
+  name: SiameseNetAcf
+  ckpt_path: # path/to/your/checkpoint
+  num_neighbors: 16
+  num_layers: 4
+  num_points: 131072
+  num_classes: 4
+  ignored_label_inds: [0]
+  sub_sampling_ratio: [4, 4, 4, 4, 2]
+  pc_in_channels: 5
+  img_in_channels: 3
+  dim_features: 8
+  dim_output: [16, 64, 128, 256, 512]
+  grid_size: 0.06
+  augment:
+    recenter:
+      dim: [0, 1, 2]
+    std:
+      points:
+        method: linear
+      feat:
+        method: linear
+    rotate:
+      method: vertical
+    scale:
+      min_s: 0.9
+      max_s: 1.1
+    noise:
+      noise_std: 0.001
+pipeline:
+  name: SemanticSegmentationDual
+  optimizer:
+    lr: 0.001
+#    weight_decay: 0.0001
+#    momentum: 0.9
+  batch_size: 2
+  num_workers: 2
+  main_log_dir: ./logs
+  max_epoch: 500
+  save_ckpt_freq: 5
+  scheduler_gamma: 0.9886
+  test_batch_size: 8
+  train_sum_dir: train_log
+  val_batch_size: 2
+  summary:
+    record_for: []
+    max_pts:
+    use_reference: false
+    max_outputs: 1
