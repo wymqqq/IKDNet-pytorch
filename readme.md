@@ -6,14 +6,6 @@ This is the official PyTorch implementation of  [IKD-Net](https://arxiv.org/ftp/
 
 ![IKD-Net](./network.jpg)
 
-Requirements
----------------------
- * CUDA 11.1 (Ubuntu 20.04)
- * PyTorch 1.8.2
- * Open3D  0.15.2
- * GDAL 3.4.0
- * laspy 2.1.2
-
 N3C-California Dataset
 ---------------------
 N3C-California is a specialized benchmark dataset for quantitative evaluation in multi-modal joint segmentation tasks, which is the largest coverage area annotated LiDAR-imagery dataset to date.
@@ -23,6 +15,14 @@ N3C-California is a specialized benchmark dataset for quantitative evaluation in
 OneDrive: TODO
 
 Baiduyun: https://pan.baidu.com/s/1uofogwM_TAAKaIw0cqPb0A (access code: 5no1)
+
+Requirements
+---------------------
+ * CUDA 11.1 (Ubuntu 20.04)
+ * PyTorch 1.8.2
+ * Open3D  0.15.2
+ * GDAL 3.4.0
+ * laspy 2.1.2
 
 How to use it?
 ---------------------
