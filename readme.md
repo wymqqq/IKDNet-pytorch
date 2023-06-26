@@ -14,7 +14,7 @@ N3C-California is a specialized benchmark dataset for quantitative evaluation in
 
 OneDrive: TODO
 
-Baiduyun: https://pan.baidu.com/s/1uofogwM_TAAKaIw0cqPb0A](https://pan.baidu.com/s/1kqN2TSqcmz1mWXC-2wmLdg (access code: 0yiv)
+Baiduyun: https://pan.baidu.com/s/1iCe9YUlgcwweSCPnTBe0Vg (access code: g6oy)
 
 Requirements
 ---------------------
